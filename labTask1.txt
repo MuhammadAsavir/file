@@ -168,6 +168,16 @@ if _name_ == '_main_':
     print(f"Final value: {value.value}")
 
 -------------------------Task5
+#pehle .sh ki ek file banegi usme ye code chalega python wali file executable bnayengay uske bad us file ko run krengay
+#!/bin/bash
+
+file=$1
+
+if [ ! -x "$file" ]; then
+  chmod +x "$file"
+fi
+
+#same task mai ye dusri file bnegi python ki jo k executable bnayii jyegi dehan rkhna
 import os
 from multiprocessing import Process, Value, Array
 
